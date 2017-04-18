@@ -1,0 +1,31 @@
+<ion-view title="{{params.game_name}}">
+	<ion-nav-bar class="bar-positive">
+		<ion-nav-buttons>
+			<button class="button button-clear" ui-sref="pulse" ng-click="goBack()">
+				<i class="icon ion-chevron-left"></i>
+			</button>
+		</ion-nav-buttons>
+	</ion-nav-bar>
+	
+	<ion-content>
+		<ion-scroll ng-style="{height:getHeight()}">
+			<div class="list" style="width: 100%;padding-left: 1.5vw;">
+				<div style="height: 25vw;width: calc(97% / 3);float: left;margin-bottom: 1vw;margin-right: 1vw;" class="item" ng-repeat="game in gameu.data">
+					<div ui-sref="room({roomid:game.room_id})">
+						<img ng-src="{{game.room_src}}"/>
+						<div>
+							<p style="padding: 0 1vw;font-size: 1.5vw;height: 2vw;line-height: 2vw;">
+								<span class="game-room">{{game.room_name}}</span>
+								<span class="game-name">{{game.game_name}}</span>
+							</p>
+							<p style="padding: 0 1vw;font-size: 1.5vw;height: 2vw;line-height: 2vw;margin-top: 1.5vw;">
+								<span class="game-room"><i class="fa fa-user-o" style="margin-right: 1vw;"></i>{{game.nickname}}</span>
+								<span class="game-name"><i class="fa fa-user-o" style="margin-right: 1vw;"></i>{{game.online}}</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-scroll>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,139 @@
+.all{
+	background: #fff!important;
+}
+.search-top{
+	width: 100%;
+	background-image: url(../../img/mainbgV2.png);
+	background-size: 100% 100%;
+	padding-top: 15vw;
+}
+.index_logo{
+	width: 100%;
+	height: 12vw;
+	text-align: center;
+}
+.index_logo img{
+	height: 100%;
+	width: 60%;
+}
+.search-input{
+	margin-top: 20px;
+	width: 100%;
+}
+.search-input input{
+	width: 90%;
+	height: 40px;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding-left: 20px;
+	font-size: 16px;
+}
+.search-hot{
+	width: 100%;
+	padding: 5vw 10vw;
+	text-align: center;
+	color: white;
+}
+.search-hot-cont{
+	width: 100%;
+	height: 20vw;
+	overflow: hidden;
+}
+.search-hot-t{
+	white-space: nowrap;
+}
+.search-hot-t hr{
+	display: inline-block;
+	width: 25vw;
+	border: none;
+	border: .1vw solid white;
+}
+.search-hot-t span{
+	font-size: 14px;
+	display: inline-block;
+	margin: 0 5vw;
+	letter-spacing: 5px;
+}
+.search-hot-s{
+	margin-top: 5vw;
+	width: 100%;
+	height: 100%;
+}
+.search-hot-s tr{
+	font-size: 2vw;
+	width: 50%;
+	margin: 1vw 0;
+	float: left;
+	overflow: hidden;
+}
+.search-hot-s tr th{
+	width: 100%;
+	white-space: nowrap;
+	margin: 0 auto;
+}
+.search-hot-s tr th i{
+	background: white;
+	color: #aaa;
+	display: inline-block;
+	width: 3vw;
+	height: 3vw;
+	line-height: 3vw;
+	border-radius: 50%;
+}
+
+
+.search-main{
+	width: 100%;
+	padding: 2vw 5vw;
+}
+.search-main>p{
+	font-size: 17px;
+	color: gray;
+	width: 70px;
+	margin: 0 auto;
+}
+.search-main-list{
+	width: 100%!important;
+}
+.search-main-item{
+	float: left;
+	width: 100%!important;
+	border-left: none;
+	border-right: none;
+	padding: 15px 0;
+	height: 120px!important;
+	position: relative;
+	white-space: nowrap;
+}
+.search-main-img{
+	width: 120px;
+	height: 90px;
+	float: left;
+}
+.search-main-img img{
+	width: 100%;
+	height: 100%;
+}
+.search-main-info{
+	width: 70%;
+	height: 90px;
+	float: left;
+	position: absolute;
+	left: 130px;
+}
+.search-main-info-p1{
+	margin-top: 10px;
+	font-size: 15px!important;
+}
+.search-main-info-p2{
+	margin-top: 30px;
+	font-size: 13px!important;
+} 
+.tianyan{
+	color: #C0C0C0;
+}
+.search-date{
+	position: absolute;
+	right: 0;
+	margin-left: 500px;
+}

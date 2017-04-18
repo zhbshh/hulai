@@ -1,0 +1,58 @@
+<ion-view title="{{params.tit}}">
+	<ion-content>
+		<ion-scroll ng-style="{height:getHeight()}">
+			<div class="works">
+				<div class="works-content">
+					<div class="works-spec">
+						<div class="works-spec-c">
+							<div class="works-size">
+								<i class="works-att">尺寸</i>
+								<span>小(50x50以内)</span>
+								<span>中(100x100以内)</span>
+								<span>大(100x100以上)</span>
+							</div>
+							<div class="works-price" ng-repeat="pict in pictures">
+								<div class="works-price-name" style="color: black;">
+									{{pict.name}}
+									<div class="works-price-btn" ng-repeat="btns in pict.data">
+										<button class="button button-clear button-positive">
+											￥{{btns.price}}
+										</button>
+									</div>
+								</div>
+								
+							</div>
+							<div class="works-color">
+								<i class="works-att">颜色</i>
+								<button class="button button-small button-positive"></button>
+								<button class="button button-small button-assertive"></button>
+								<button class="button button-small button-calm"></button>
+								<button class="button button-small button-balanced"></button>
+								<button class="button button-small button-dark"></button>
+								<button class="button button-small button-energized"></button>
+								<button class="button button-small button-royal"></button>
+								<button class="button button-small button-stable"></button>
+								<button class="button button-small button-light"></button>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="list works-list">
+							<div class="item works-item" ng-repeat="info in infos">
+								<img class="works-image" ng-src="{{info.cover}}"/>
+								<div class="pic-info">
+									<p style="font-size: 2.7vw;">{{info.title}}</p>
+									<p  style="font-size: 2.6vw;">
+										<span>{{info.category}}</span>
+										<span>{{info.length}}x{{info.width}}</span>
+									</p>
+									<p class="pic-price"  style="font-size: 3vw;">￥{{info.price}}</p>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-scroll>
+	</ion-content>
+</ion-view>

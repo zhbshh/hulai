@@ -1,0 +1,121 @@
+
+.room-top{
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	padding: 0 20px;
+}
+.room-logo{
+	width: 100px;
+	height: 80px;
+	float: left;
+}
+.room-logo img{
+	width: 100%;
+	height: 100%;
+}
+.room-cli{
+	float: right;
+	text-align: center;
+	margin-top: 10px;
+}
+.room-cli a{
+	display: inline-block;
+	width: 120px;
+	height: 60px;
+	border: 1px solid #ccc;
+	line-height: 60px;
+	text-decoration: none;
+	font-size: 18px;
+	border-radius: 30px;
+	margin-left: 5px;
+}
+.room-toroom{
+	color: gray;
+}
+.room-openshow{
+	background: orange;
+	color: white;
+}
+
+
+.room-show{
+	width: 100%;
+	height: 325px;
+}
+.room-show img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.room-owner{
+	width: 100%;
+	height: 150px;
+	padding: 0 20px;
+	position: relative;
+	background: #fff;
+}
+.room-avatar{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-top: 20px;
+}
+.room-avatar img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.room-roominfo{
+	position: absolute;
+	top: 20px;
+	left: 80px;
+	font-size: 16px;
+}
+.room-online i{
+	color: orange;
+}
+.room-buttons{
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	text-align: center;
+	right: 0;
+}
+.room-buttons button{
+	font-size: 20px;
+	padding: 0 30px;
+}
+.btn-lin::after{
+	content: '|';
+	position: relative;
+	left: 30px;
+	top: -2px;
+}
+
+
+
+.room-now{
+	margin-top: 20px;
+	padding: 20px;
+	width: 100%;
+	background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+{
+  "name": "hoolayapi",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://open.douyucdn.cn"
+    },
+    {
+    	"path":"/tianyanapi",
+    	"proxyUrl":"http://www.tianyancha.com"
+    },
+    {
+    	"path":"/artist",
+    	"proxyUrl":"http://www.hoolay.cn"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+
+<ion-view>
+	<ion-content>
+		<ion-scroll ng-style='{height: getHeight()}'  zooming="true">
+			<div>
+				<ion-slide-box  does-continue="true" auto-play="true" slide-interval="4000">
+					<ion-slide ng-repeat='pics in infos.slidesData'>
+						<div>
+							<img class="lunbo" ng-src="{{pics.cover}}" />
+						</div>
+					</ion-slide>
+				</ion-slide-box>
+			
+				<div class="bar bar-header item-input-inset">
+					<label class="item-input-wrapper">
+					    <i class="icon ion-ios-search placeholder-icon"></i>
+					    <input type="search" placeholder="搜索关键词">
+					</label>
+				</div>
+			</div>
+			<div class="infos">
+				<div class="list">
+					<p>胡来精选</p>
+					<ion-scroll  direction="x">
+						<div class="item" ng-repeat="subjects in infos.subjectsEditorData">
+							<div ui-sref="subjects({id:subjects.id})">
+								<img ng-src="{{subjects.cover}}"/>
+								<div class="list-item-div-1"></div>
+								<div class="list-item-div-2">
+									<p>{{subjects.title}}</p>
+									<p>{{subjects.subtitle}}</p>
+								</div>
+							</div>
+						</div>
+					</ion-scroll>
+				</div>
+				<div class="list">
+					<p>艺文推荐</p>
+					<ion-scroll direction="x">
+						<div class="item" ng-repeat="posts in infos.postsEditorData">
+							<div ui-sref="subjects({id:posts.id})">
+								<img ng-src="{{posts.cover}}"/>
+								<div class="list-item-div-1"></div>
+								<div class="list-item-div-2">
+									<p>{{posts.title}}</p>
+									<p>{{posts.subtitle}}</p>
+								</div>
+							</div>
+						</div>
+					</ion-scroll>
+				</div>
+				<ion-list>
+					<p>艺术家</p>
+					<ion-scroll direction="x">
+						<ion-item ng-repeat="artists in infos.artistsEditorData" class="artistsItem">
+							<div ui-sref="artist({id:artists.id})">
+								<img class="artistsItem-img" ng-src="{{artists.cover}}"/>
+								<p>
+									<span class="artistsPic">
+										<img ng-src="{{artists.avatar}}"/>
+									</span>
+									<span class="artistsName">{{artists.name}}</span>
+									<i class="iconfont"></i>
+								</p>
+							</div>
+						</ion-item>
+					</ion-scroll>
+				</ion-list>
+			</div>
+		</ion-scroll>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,57 @@
+<ion-view>
+	<ion-content class="all">
+		<ion-scroll ng-style="{height:getHeight()}">
+			<div class="search">
+				<div class="search-top">
+					<div class="index_logo">
+						<img src="../../img/index_logo_web.png"/>
+					</div>
+					<div class="search-input">
+						<input type="text" placeholder="请输入公司、人名、商标" />
+					</div>
+					<div class="search-hot">
+						<div class="search-hot-cont">
+							<div class="search-hot-t">
+								<hr />
+								<span>热搜</span>
+								<hr />
+							</div>
+							<div class="search-hot-s">
+								<table>
+									<tbody>
+										<tr ng-repeat="info in infos.data">
+											<th>
+												<i>{{$index+1}}</i>
+												{{info.title}}
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="search-main">
+					<p>热点案例</p>
+					<div class="list search-main-list">
+						<div class="item search-main-item" ng-repeat="new in news.data">
+							<div ui-sref="tian({id:new.id + '.html',title:new.title})">
+								<div class="search-main-img">
+									<img ng-src="{{new.picUrl}}" alt="" />
+								</div>
+								<div class="search-main-info">
+									<p class="search-main-info-p1">{{new.title}}</p>
+									<p class="search-main-info-p2">
+										<span class="tianyan">天眼查</span>
+										<span class="search-date">{{new.updateTime}}</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ion-scroll>
+	</ion-content>
+</ion-view>

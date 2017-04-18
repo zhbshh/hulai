@@ -1,0 +1,56 @@
+.subjects-comment{
+	width: 100%;
+	padding: 20px;
+}
+.subjects-comment-content{
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+.subjects-comment-you{
+	width: 100%;
+	height: 130px;
+	padding-top: 10px;
+	text-indent: -140px;
+}
+.subjects-comment-button{
+	height: 50px;
+}
+.subjects-comment-button button{
+	float: right;
+	margin-top: 10px;
+	opacity: .5;
+	width: 65px;
+}
+.subjects-comment-hr hr{
+	border-color: #fff;
+}
+
+
+
+.comment-user{
+	overflow: hidden;
+}
+.comment-user-img{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.comment-user-img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.comment-user-info{
+	float: left;
+	width: calc(100% - 40px);
+	padding-left: 10px;
+	font-size: 15px;
+}
+.comment-created{
+	float: right;
+}
+.comment-user-cont{
+	color: gray;
+	font-size: 16px;
+	margin-bottom: 15px;
+}

@@ -1,0 +1,28 @@
+
+
+<ion-view title="我又不乱来">
+	<ion-content>
+		<ion-scroll ng-style="{height:getHeight()}">
+			<div class="list game-list">
+				<div class="item game-class" ng-repeat="info in gameInfo">
+					
+					<!-- 第一种配置方法 -->
+					<div class="game-now" ui-sref="game({cate_id:info.cate_id,game_name:info.game_name})">
+						<img ng-src="{{info.game_src}}"/>
+						<p>
+							{{info.game_name}}
+						</p>
+					</div>
+					
+					<!-- 第二种配置方法 -->
+					<!--<a ng-href="#/game/{{info.cate_id}}/{{info.game_name}}">
+						<img ng-src="{{info.game_src}}"/>
+						<p>
+							{{info.game_name}}
+						</p>
+					</a>-->
+				</div>
+			</div>	
+		</ion-scroll>
+	</ion-content>
+</ion-view>

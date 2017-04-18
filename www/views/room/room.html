@@ -1,0 +1,49 @@
+<ion-view>
+	<!--{{roomInfo}}-->
+	<ion-content style="background: #ddd;">
+		<div>
+			<div class="room-top">
+				<div class="room-logo"><img src="../../img/douyu.png"/></div>
+				<div class="room-cli">
+					<a href="#" class="room-toroom">进入首页</a>
+					<a class="room-openshow">打开App观看</a>
+				</div>
+			</div>
+			
+			<div class="room-show">
+				<img src="{{roomInfo.room_thumb}}" alt="" />
+			</div>
+			
+			<div class="room-owner">
+				<div class="room-avatar">
+					<img src="{{roomInfo.avatar}}"/>
+				</div>
+				<div class="room-roominfo">
+					<p class="room-ownname">
+						主播：{{roomInfo.owner_name}}
+					</p>
+					<p class="room-online">
+						共<i>{{roomInfo.online}}</i>人正在观看
+					</p>
+				</div>
+				<div class="room-buttons">
+					<button class="button icon-left ion-document button-clear button-energized btn-lin">发弹幕</button>
+					<button class="button icon-left ion-ios-heart-outline button-clear button-energized btn-lin">关注</button>
+					<button class="button icon-left ion-share button-clear button-energized">分享</button>
+				</div>
+			</div>
+			
+			
+			<div class="room-now">
+				<p style="font-size: 20px;">
+					<i class="fa fa-youtube-play" style="color: orange;"></i>
+					同类直播
+				</p>
+			</div>
+			
+			
+			
+			
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,110 @@
+/* Empty. Add your own CSS if you like */
+
+body{
+	font-size: 10px;
+}
+
+
+
+.scroll-content.ionic-scroll{
+	background: #f0f0f0;
+	box-sizing: border-box;
+}
+.lunbo{
+	width: 100vw;height: 400px;
+}
+.bar.item-input-inset{
+	position: absolute;top: 10px;padding: 0;width: 90%;margin: 0 auto;border-radius: 7px;
+}
+.bar.item-input-inset .item-input-wrapper{
+	height: 100%;font-size: 20px;padding: 0 15px;color: black;
+}
+.bar.item-input-inset .item-input-wrapper input{
+	font-size: 17px;padding: 0;
+}
+.infos{
+	overflow: hidden;margin: 10px  10px 15px;
+}
+.list{
+	white-space: nowrap;
+}
+.list>p{
+	margin-bottom: 20px;font-size: 17px;
+}
+.item{
+	padding: 0;
+}
+.list .item{
+	/*width: 48.5%;*/
+	width: 280px;height: 180px;
+	/*float: left;*/
+	margin-right: 10px;display: inline-block;
+}
+.list .item img{
+	width: 100%;height: 100%;
+}
+.list-item-div-1{
+	position: absolute;top: 140px;background: black;width: 100%;height: 60px;opacity: .3;
+}
+.list-item-div-2{
+	position: absolute;top: 120px;padding-left: 10px;padding-top:10px ;
+}
+.list-item-div-2 p{
+	color: white;font-size: 16px;
+}
+
+
+
+
+
+.slider-slide{
+	width: 100%;height: 370px;
+}
+.slider-slide img{
+	width: 100%;
+}
+
+
+.dian::before{
+	content: "·";
+	margin-right: 5px;
+}
+
+
+.game-list{
+	padding: 0 2vw;
+	width: 100%;
+	list-style: none !important;
+}
+.game-class{
+	float: left;
+	width: calc(100% / 3) !important;
+	height: 30vw !important;
+	margin: 0 !important;
+	text-align: center;
+}
+.game-now{
+	width: 100%;
+	height: 100%;
+}
+.game-now img{
+	width: 60% !important;
+	height: 60% !important;
+	border-radius: 50%;
+	margin-top: 3vw;
+}
+.game-now p{
+	font-size: 2.3vw;
+	cursor: pointer;
+	width: 15vw;
+	margin: 1vw auto 0;
+}
+
+
+.game-room{
+	float: left;display: inline-block;width: 20vw;overflow: hidden;text-overflow: ellipsis;
+}
+.game-name{
+	float: right;
+	color: orangered;
+}

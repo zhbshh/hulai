@@ -1,0 +1,91 @@
+var app = angular.module('myApp',['ionic'])
+.config(function($stateProvider,$urlRouterProvider){
+	$urlRouterProvider.otherwise('/tabs/home')
+	$stateProvider.state('tabs',{
+		url:'/tabs',
+		templateUrl:'views/tabs/tabs.html'
+	})
+	.state('tabs.home',{
+		url:'/home',
+		views:{
+			'tabs-home':{
+				templateUrl:'views/home/home.html',
+				controller:'homeCtrl'
+			}
+		}
+	})
+	.state('tabs.pulse',{
+		url:'/pulse',
+		views:{
+			'tabs-pulse':{
+				templateUrl:'views/pulse/pulse.html',
+				controller:'pulseCtrl'
+			}
+		}
+	})
+	.state('tabs.hoolay',{
+		url:'/hoolay',
+		views:{
+			'tabs-hoolay':{
+				templateUrl:'views/hoolay/hoolay.html'
+			}
+		}
+	})
+	.state('tabs.search',{
+		url:'/search',
+		views:{
+			'tabs-search':{
+				templateUrl:'views/search/search.html',
+				controller:'searchCtrl'
+			}
+		}
+	})
+	.state('subjects',{
+		url:'/subjects/:id',
+		templateUrl:'views/subjects/subjects.html',
+		controller:'subjectsCtrl'
+	})
+	.state('game',{
+		url:"/game/:cate_id/:game_name",
+		templateUrl:'views/game/game.html',
+		controller:'gameCtrl'
+	})
+	.state('tian',{
+		url:'/tian/:id/:title',
+		templateUrl:'views/tian/tian.html',
+		controller:'tianCtrl'
+	})
+	.state('artist',{
+		url:'/artist/:id',
+		templateUrl:'views/artist/artist.html',
+		controller:'artCtrl'
+	})
+	.state('subjects.works',{
+		url:'/works/:tit',
+		views:{
+			'subjects-works':{
+				templateUrl:'views/works/works.html',
+				controller:'worksCtrl'
+			}
+		}
+	})
+	.state('room',{
+		url:'/room/:roomid',
+		templateUrl:'views/room/room.html',
+		controller:'roomCtrl'
+	})
+})
+
+.factory('Spec',function(){
+	var pictures = [
+		{name:'价格'},
+		{data:[
+			{price:'0`1000'},
+			{price:'1000`5000'},
+			{price:'5000`10000'},
+			{price:'10000`50000'},
+			{price:'50000以上'}
+		]}
+	]
+	return pictures
+})
